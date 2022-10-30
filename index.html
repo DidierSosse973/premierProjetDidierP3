@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,60 +16,53 @@
             <div><img src="img/logo/ohmyfood.png" alt="image logo" class="dimensionImg"></div>
         </div>
         <div class="flexCenter backGris flexEvenly">
-            <div class="espaceIcon iconTitre"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="espaceIcon iconTitre"><i class="fa-solid fa-location-dot iconeNone"></i></div>
             <div><input type="search" value="Paris, Belleville" class="borderNone"></div>
         </div>
-
     </header>
-    <main>
-        <div class="flexDesktopCenter">
-            <section>
-                <div class="flexCenter position">
-                    <div>
-                        <div class="dispositionH ">
-                            <h1><span>Réservez le menu qui </span> <span>vous convient</span></h1>
-                        </div>
-                    </div>
-                    <div class="dispositionP">
-                        <p>Découvrez des restaurants d'exception, <span class="espace">sélectionnés par nos
-                                soins.</span></p>
-                    </div>
-                    <div class="buttonExplor colorFondExplor flexCenter">
-                        <div>Explorez nos restaurants</div>
+    <main class="flexBetweenDesktop">
+        <section class="positionReserver">
+            <div class="flexCenter position">
+                <div>
+                    <div class="dispositionReserver">
+                        <h1><span>Réservez le menu qui </span> <span class="espaceReserver">vous convient</span></h1>
                     </div>
                 </div>
-            </section>
-            <aside class="sizeFontionnement">
-                <div class="position">
-                    <div>
-                        <h1>Fonctionnement</h1>
-                    </div>
-                    <div class="position flexAround">
-                        <div class="buttonFoncti flexAround">
-                            <div class="buttonChiffre flexCenter">1</div>
-                            <i class="fa-solid fa-mobile-screen-button"></i>
-                            <div class="margeSection">Choisissez votre restaurant</div>
-                        </div>
-                        <div class="buttonFoncti flexAround">
-                            <div class="buttonChiffre flexCenter">2</div>
-                            <i class="fa-solid fa-list"></i>
-                            <div class="margeSection largeurFoncti"> Composez votre menu</div>
-                        </div>
-                        <div class="buttonFoncti flexAround">
-                            <div class="buttonChiffre flexCenter">3</div>
-                            <i class="fa-solid fa-store"></i>
-                            <div class="margeSection largeurFoncti">Dégustez au restaurant</div>
-                        </div>
-                    </div>
+                <div class="dispositionP dispositionPNone">
+                    <span>
+                        <p class="margesReserver flexCentreReserver ">Découvrez des restaurants d'exception,
+                    </span> <span class="espaceReserver espaceNone">sélectionnés par nos
+                        soins.</span></p>
                 </div>
-            </aside>
-        </div>
-        <div>
-        </div>
+                <div class="buttonExplor colorFondExplor flexCenter">
+                    <div>Explorez nos restaurants</div>
+                </div>
+            </div>
+        </section>
+        <aside class="positionFonction">
+            <div>
+                <h1 class="h1DesktopScreenLarge">Fonctionnement</h1>
+            </div>
+            <div class="buttonFoncti flexAround">
+                <div class="buttonChiffres flexCenter">1</div>
+                <div><i class="fa-solid fa-mobile-screen-button iconFoncti"></i></div>
+                <div class="margeSection">Choisissez votre restaurant</div>
+            </div>
+            <div class="buttonFoncti flexAround">
+                <div class="buttonChiffres flexCenter">2</div>
+                <div><i class="fa-solid fa-list iconFoncti"></i></div>
+                <div class="margeSection largeurFoncti"> Composez votre menu</div>
+            </div>
+            <div class="buttonFoncti flexAround">
+                <div class="buttonChiffres flexCenter">3</div>
+                <div><i class="fa-solid fa-store iconFoncti"></i></div>
+                <div class="margeSection largeurFoncti">Dégustez au restaurant</div>
+            </div>
+        </aside>
     </main>
     <section class="position">
         <div>
-            <h1>Restaurants</h1>
+            <h1 class="h1MargeResto">Restaurants</h1>
         </div>
         <div class="margesSection">
             <div class="sizeRestaurant">
@@ -129,14 +123,20 @@
         </div>
     </section>
     <footer>
-        <div class="margeFooter2 ">Ohmyfood</div>
-        <div><i class="fa-solid fa-utensils iconFooter"></i>Proposer un restaurant</div>
-        <div><i class="fa-solid fa-handshake-angle iconFooter"></i>Devenir partenaire</div>
-        <div>
-            Mentions légales
+        <div class="espaceFooter">
+        <div class="margeFooter2">Ohmyfood</div>
+        <div class="margeFooter2"><i class="fa-solid fa-utensils iconFooter colorIcon"></i>
+            <div class="paddingFooter">Proposer un restaurant</div>
         </div>
-        <div>
-            Contact
+        <div class="margeFooter2"><i class="fa-solid fa-handshake-angle iconFooter colorIcon"></i>
+            <div class="paddingFooter">Devenir partenaire</div>
+        </div>
+            <div class="espaceFooter2">
+                Mentions légales
+            </div>
+            <div class="espaceFooter2">
+                Contact
+            </div>
         </div>
     </footer>
 </body>

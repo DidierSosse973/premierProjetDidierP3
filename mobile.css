@@ -2,7 +2,6 @@ html,
 body {
     flex-grow: 1;
     width: 100%;
-    margin-left: 0;
     font-family: 'Shrikhand', 'Roboto', Times New Roman, Times, serif;
 }
 
@@ -87,14 +86,14 @@ h1 {
     width: 100%;
 }
 
-.dispositionH {
+.dispositionReserver {
     display: flex;
     flex-direction: column;
     width: 70%;
     margin-left: 20%;
 }
 
-.espace {
+.espaceReserver {
     padding-left: 12%;
 }
 
@@ -111,7 +110,7 @@ h1 {
     color: white;
     cursor: pointer;
     border-radius: 30px 30px 30px 30px;
-    background-color: #FF79DA;
+    background-color: #9356DC;
 }
 
 .buttonFoncti {
@@ -121,23 +120,24 @@ h1 {
     cursor: pointer;
     border-radius: 15px 15px 15px 15px;
     background-color: #f2f2f2;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
 }
 
 .largeurFoncti {
     margin-right: 13%;
 }
 
-.buttonChiffre {
+.buttonChiffres {
     height: 20px;
     width: 20px;
     color: white;
-    cursor: pointer;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 25px;
     background-color: #9356DC;
+    justify-content: center;
     position: absolute;
-    margin-right: 90%;
-    transform: translate(-10%);
+    left: 0px;
+    margin-left: 5%;
 }
 
 .buttonNouveau {
@@ -187,6 +187,12 @@ p {
     margin-bottom: 0;
 }
 
+.margesReserver {
+    flex-direction: column;
+    margin-left: 10%;
+    margin-bottom: 7%;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -204,24 +210,32 @@ footer {
     margin-left: 3%;
 }
 
-.margeFooter {
-    margin-left: 10%;
+.paddingFooter {
+    margin-left: 2%;
 }
 
 .margeFooter2 {
+    display: flex;
     margin-top: 3%;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
+    margin-left: 3%;
 }
 
 .espaceFooter {
+    margin-top: 3%;
     margin-left: 5%;
 }
 
 .espaceFooter2 {
-    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 1%;
 }
 
-@media screen and (min-width: 424px) {
+@media screen and (min-width: 425px) {
+    html {
+        margin-left: 0%;
+    }
+
     .position {
         flex-direction: column;
         height: auto;
@@ -255,27 +269,67 @@ footer {
         margin-top: 5px;
     }
 
-    .espace {
+    .espaceNone {
         padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .dispositionPNone {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .flexCentreReserver {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .espaceIcon {
         padding-left: 15%;
     }
-    .buttonChiffre {
+
+    .buttonFoncti {
+        height: 50px;
+        width: 290px;
+        color: black;
+        cursor: pointer;
+        border-radius: 15px 15px 15px 15px;
+        background-color: #f2f2f2;
+        margin-bottom: 2%;
+        margin-left: 20%;
+    }
+
+    .buttonChiffres {
         height: 20px;
         width: 20px;
         color: white;
-        cursor: pointer;
-        border-radius: 30px 30px 30px 30px;
+        border-radius: 25px;
         background-color: #9356DC;
+        justify-content: center;
         position: absolute;
-        margin-right: 65%;
-        transform: translate(-35%);
+        left: 15%;
     }
+    
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
+
+    .flexBetweenDesktop {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: auto;
+    }
+    .flexCentreReserver {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
     .espaceIcon {
         padding-left: 15%;
     }
@@ -290,24 +344,38 @@ footer {
         font-weight: bold;
         font-size: large;
         align-items: center;
+        padding-left: 43%;
     }
 
     .flexEvenly {
         display: block;
         align-items: center;
         justify-content: center;
-        padding-left: 44%;
     }
+    .espaceReserver {
+        padding-left: 12%;
+    }
+
+    .espaceNone {
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
 
     .dispositionH {
         display: flex;
-        justify-content:flex-start;
+        justify-content: flex-start;
         width: 100%;
         margin-left: 20%;
     }
 
+    .h1MargeResto{
+        padding-left: 5%;
+    }
+
+
     .position {
-        flex-wrap: wrap;
         justify-content: flex-start;
         height: auto;
         width: 100%;
@@ -327,12 +395,7 @@ footer {
         margin-left: 0%;
     }
 
-    .flexDesktopCenter {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .buttonChiffre {
+    .buttonChiffres {
         height: 20px;
         width: 20px;
         color: white;
@@ -340,21 +403,83 @@ footer {
         border-radius: 30px 30px 30px 30px;
         background-color: #9356DC;
         position: absolute;
-        margin-right: 19%;
+        left: 47%;
+    }
+
+    .buttonFoncti {
+        height: 50px;
+        width: 290px;
+        color: black;
+        cursor: pointer;
+        border-radius: 15px 15px 15px 15px;
+        background-color: #f2f2f2;
+        margin-bottom: 2%;
+        margin-left: -20%;
     }
 
     .buttonExplor {
         height: 50px;
         width: 220px;
-        margin-top: 3%;
         color: white;
         cursor: pointer;
         border-radius: 30px 30px 30px 30px;
         background-color: #FF79DA;
+        margin-left: 0;
+        margin-bottom: 18%;
+        margin-top: 5%;
     }
+    .positionFonction{
+        margin-right: 3%;
+        margin-left: 20%;
+    }
+    .dispositionReserver {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        font-family: 'Roboto';
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
 }
 
 @media screen and (min-width: 1023px) {
+
+    .flexBetweenDesktop {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+    .borderNone {
+        border: 0;
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: large;
+        align-items: center;
+        padding-left: 45%;
+    }
+    .flexCentreReserver {
+        display: flex;
+        flex-direction: initial;
+        justify-content: center;
+        align-items: center;
+        margin-left: 60px;
+    }
+
+    .iconFoncti {
+        visibility: hidden;
+    }
     .margesSection {
         flex-wrap: wrap;
         justify-content: center;
@@ -383,6 +508,51 @@ footer {
         width: 100%;
     }
 
+    .positionReserver {
+        float: left;
+    }
+    .positionFonction{
+        margin-right: 3%;
+        margin-left: 20%;
+    }
+
+    h1{
+        margin-top: 3%;
+    }
+    .h1MargeResto{
+        padding-left: 6%;
+    }
+
+    .iconeNone{
+        color: #f2f2f2;
+    }
+
+    .h1Reserver {
+       flex-direction: row;
+       width: 100%;
+    }
+    .dispositionReserver {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .espaceReserver {
+        padding-left: 0;
+    }
+
+    .buttonChiffres {
+        height: 20px;
+        width: 20px;
+        color: white;
+        border-radius: 25px;
+        background-color: #9356DC;
+        justify-content: center;
+        position: absolute;
+        left: 57%;
+    }
+
     .sizeRestaurant {
         display: flex;
         width: 100%;
@@ -392,9 +562,9 @@ footer {
         border-radius: 10px;
         justify-content: center;
     }
-    
+
     .imagesRestaurants {
-        
+
         background-size: cover;
         width: 450px;
         height: 120px;
@@ -402,9 +572,11 @@ footer {
         background-position: center center;
         border-radius: 15px 15px 0px 0px;
     }
-    .contourImage{
+
+    .contourImage {
         margin: 10%;
     }
+
     .buttonExplor {
         height: 50px;
         width: 220px;
@@ -413,31 +585,151 @@ footer {
         border-radius: 30px 30px 30px 30px;
         background-color: #FF79DA;
         margin-left: 15%;
+        margin-bottom: 18%;
     }
+
+    .buttonNouveau {
+        height: 35px;
+        width: 70px;
+        color: #067055;
+        cursor: pointer;
+        border-radius: 0px 0px 0px 0px;
+        background-color: #99E2D0;
+        position: absolute;
+        margin-left: 36%;
+        margin-top: 10px;
+    }
+
     footer {
         background-color: black;
         color: white;
         font-family: 'Roboto';
-        height: auto;
+        height: 300px;
         margin-left: 0;
         margin-right: 0;
     }
-    .iconFooter{
+
+    .iconFooter {
         visibility: hidden;
     }
+
     .margeFooter2 {
         display: flex;
         margin-bottom: 3%;
     }
+
     .espaceFooter {
         margin-left: 0;
     }
+
     .margeFooter2 {
         margin-top: 2%;
         margin-bottom: 2%;
         margin-left: 9%;
     }
+
     .espaceFooter2 {
         margin-left: 10%;
     }
 }
+@media screen and (min-width: 1439px){
+    .buttonNouveau {
+        height: 40px;
+        width: 70px;
+        color: #067055;
+        cursor: pointer;
+        border-radius: 0px 0px 0px 0px;
+        background-color: #99E2D0;
+        position: absolute;
+        margin-left: 25%;
+        margin-top: 15px;
+    }
+    .h1MargeResto{
+        padding-left: 6%;
+        margin-left: 6%;
+    }
+
+    .buttonFoncti {
+        height: 50px;
+        width: 290px;
+        color: black;
+        cursor: pointer;
+        border-radius: 15px 15px 15px 15px;
+        background-color: #f2f2f2;
+        margin-bottom: 2%;
+        margin-left: -35%;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        font-family: 'Roboto';
+        height: 350px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+    @media screen and (min-width: 2559px){
+
+    .borderNone {
+        border: 0;
+        background-color: #f2f2f2;
+        font-weight: bold;
+        font-size: large;
+        align-items: center;
+        padding-left: 48%;
+    }   
+
+    .h1MargeResto {
+        padding-left: 12%;
+        margin-left: 6%;
+    }
+    .h1DesktopScreenLarge {
+        margin-right: 40%;
+        padding-right: 10%;
+        position: relative;
+        left: -80%;
+    }
+
+    .buttonNouveau {
+        height: 40px;
+        width: 70px;
+        color: #067055;
+        cursor: pointer;
+        border-radius: 0px 0px 0px 0px;
+        background-color: #99E2D0;
+        position: absolute;
+        margin-left: 14%;
+        margin-top: 15px;
+    }
+
+    .buttonFoncti {
+        height: 50px;
+         width: 290px;
+         color: black;
+        cursor: pointer;
+        border-radius: 15px 15px 15px 15px;
+        background-color: #f2f2f2;
+        margin-bottom: 2%;
+        margin-left: -72%;
+    }
+    
+    footer {
+        background-color: black;
+        color: white;
+        font-family: 'Roboto';
+        height: 350px;
+        margin-left: 0;
+        margin-right: 0;
+    } 
+    
+    footer {
+        background-color: black;
+        color: white;
+        font-family: 'Roboto';
+        height: 500px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
