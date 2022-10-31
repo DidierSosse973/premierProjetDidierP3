@@ -1,7 +1,7 @@
 html,
 body {
     flex-grow: 1;
-    width: 100%;
+    width: auto;
     font-family: 'Shrikhand', 'Roboto', Times New Roman, Times, serif;
 }
 
@@ -89,7 +89,7 @@ h1 {
 .dispositionReserver {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     margin-left: 20%;
 }
 
@@ -403,7 +403,7 @@ footer {
         border-radius: 30px 30px 30px 30px;
         background-color: #9356DC;
         position: absolute;
-        left: 47%;
+        left: 45%;
     }
 
     .buttonFoncti {
@@ -415,6 +415,18 @@ footer {
         background-color: #f2f2f2;
         margin-bottom: 2%;
         margin-left: -20%;
+    }
+
+    .buttonNouveau {
+        height: 20px;
+        width: 70px;
+        color: #067055;
+        cursor: pointer;
+        border-radius: 0px 0px 0px 0px;
+        background-color: #99E2D0;
+        position: absolute;
+        margin-left: 67%;
+        margin-top: 10px;
     }
 
     .buttonExplor {
@@ -479,6 +491,17 @@ footer {
 
     .iconFoncti {
         visibility: hidden;
+    }
+
+    .buttonFoncti {
+        height: 50px;
+        width: 290px;
+        color: black;
+        cursor: pointer;
+        border-radius: 15px 15px 15px 15px;
+        background-color: #f2f2f2;
+        margin-bottom: 2%;
+        margin-left: -22%;
     }
     .margesSection {
         flex-wrap: wrap;
@@ -550,7 +573,7 @@ footer {
         background-color: #9356DC;
         justify-content: center;
         position: absolute;
-        left: 57%;
+        left: 55.5%;
     }
 
     .sizeRestaurant {
@@ -633,6 +656,18 @@ footer {
     }
 }
 @media screen and (min-width: 1439px){
+
+    .buttonChiffres {
+        height: 20px;
+        width: 20px;
+        color: white;
+        border-radius: 25px;
+        background-color: #9356DC;
+        justify-content: center;
+        position: absolute;
+        left: 56%;
+    }
+
     .buttonNouveau {
         height: 40px;
         width: 70px;
@@ -641,7 +676,7 @@ footer {
         border-radius: 0px 0px 0px 0px;
         background-color: #99E2D0;
         position: absolute;
-        margin-left: 25%;
+        margin-left: 24%;
         margin-top: 15px;
     }
     .h1MargeResto{
@@ -701,6 +736,17 @@ footer {
         position: absolute;
         margin-left: 14%;
         margin-top: 15px;
+    }
+
+    .buttonChiffres {
+        height: 20px;
+        width: 20px;
+        color: white;
+        border-radius: 25px;
+        background-color: #9356DC;
+        justify-content: center;
+        position: absolute;
+        left: 56.5%;
     }
 
     .buttonFoncti {
